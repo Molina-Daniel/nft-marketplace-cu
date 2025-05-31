@@ -4,13 +4,13 @@ project_type: no-code
 networks:
   - name: anvil
     chain_id: 31337
-    rpc: http://localhost:8545
+    rpc: http://127.0.0.1:8545
 storage:
   postgres:
     enabled: true
-  csv:
-    enabled: true
-    path: ./generated_csv
+  # csv:
+  #   enabled: true
+  #   path: ./generated_csv
 native_transfers:
   enabled: false
 contracts:
