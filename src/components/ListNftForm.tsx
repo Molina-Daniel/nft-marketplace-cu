@@ -168,7 +168,9 @@ export default function ListNftForm() {
 
       {step === 2 && (
         <div className="space-y-6">
-          <h2 className="text-xl font-semibold">Preview Your Listing</h2>
+          <h2 className="text-xl font-semibold text-gray-700">
+            Preview Your Listing
+          </h2>
 
           {!isOwner ? (
             <div className="p-4 bg-red-50 text-red-700 rounded-md">
@@ -213,7 +215,7 @@ export default function ListNftForm() {
 
       {step === 3 && (
         <div className="space-y-6">
-          <h2 className="text-xl font-semibold">List Your NFT</h2>
+          <h2 className="text-xl font-semibold text-gray-700">List Your NFT</h2>
 
           {isApprovalSuccess ? (
             <>

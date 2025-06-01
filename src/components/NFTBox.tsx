@@ -89,14 +89,14 @@ export default function NFTBox({
           />
         )}
       </div>
-      <div className="p-4">
+      <div className="p-4 bg-[#f7eed8]">
         <div className="flex justify-between items-center mb-2">
-          <h3 className="font-bold">Token #{tokenId}</h3>
-          <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+          <h3 className="font-bold text-zinc-800">Token #{tokenId}</h3>
+          <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-center">
             {formatPrice(price)}
           </span>
         </div>
-        <p className="text-sm text-gray-600" title={contractAddress}>
+        <p className="text-sm text-gray-600 truncate" title={contractAddress}>
           Contract: {contractAddress}
         </p>
       </div>
